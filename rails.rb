@@ -10,6 +10,19 @@
 #hello_world("es") should return "Hola Mundo"
 #hello_world("de") should return "Hallo Welt"
 
+# def hello_world(code)
+#     if (code == "es")
+#         p 'Hola Mundo'
+#     elsif (code == "de")
+#         p 'Hallo Welt'
+#     else 
+#         p 'Hello World'
+#     end
+# end
+# hello_world("es")
+# hello_world("de")
+# hello_world("anythinglse")
+
 
 
 # The Grade Assigner
@@ -20,6 +33,22 @@
 # assign_grade(90) should return A
 # assign_grade(75) should return C
 
+# def assign_grade(grade)
+#     if (grade >= 90)
+#         p 'A'
+#     elsif (grade >= 80 && grade < 90)
+#         p 'B'
+#     elsif (grade >= 70 && grade < 80)
+#         p 'C'
+#     elsif (grade >= 60 && grade < 70)
+#         p 'D'
+#     else 
+#         p 'F'
+#     end
+# end
+
+# assign_grade(90)
+# assign_grade(75)
 
 # The Pluralizer
 # Write a method named pluralizer that:
@@ -30,4 +59,34 @@
 # pluralizer(1, dog) should return "1 dog" because the number one does not require a plural noun
 # Arguments will always be a number and a singular noun.
 
+# def pluralizer(noun, num)
+#     if (num > 1)
+#         print "#{num} #{noun}s\n"
+#     else
+#         print "#{num} #{noun}\n"
+#     end
+# end
+
+# pluralizer("cat", 5)
+# pluralizer("dog", 1)
+
 # Bonus: Make it handle a few collective nouns like "sheep", "geese", "children", "people" and "species".
+
+# def pluralizer(noun, num)
+#     if (noun == "child")
+#         if (num > 1)
+#             p "#{num} children"
+#         else 
+#             p "#{num} #{noun}"
+#         end
+#     elsif (num > 1)
+#         p "#{num} #{noun}s"
+#     else
+#         p "#{num} #{noun}"
+#     end
+# end
+
+# pluralizer("cat", 5)
+# pluralizer("dog", 1)
+# pluralizer("child", 5)
+# pluralizer("child", 1)
